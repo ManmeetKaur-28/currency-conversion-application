@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ProCurrencyConverter</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <div class="container">
+        <h1> Convert Your Currency</h1>
+        <form  class="form" action="/action.php" method="get">
+            <label for="currency"> FROM</label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="AED">United Arab Emirates Dirham</option> 
+                <option value="CAD">Canadian Dollar</option> 
+                <option value="CNY">Chinese Yuan</option> 
+                <option value="HKD">Hong Kong Dollar</option> 
+                <option value="JPY">Japanese Yen</option> 
+                <option value="LKR">Sri Lankan Rupee</option> 
+                <option value="MUR ">Mauritian Rupee</option> 
+                <option value="MXN">Mexican Peso</option> 
+                <option value="NZD">New Zealand Dollar</option> 
+                <option value="RUB">Russian Ruble</option> 
+                <option value="SGD">Singapore Dollar</option> 
+                <option value="NPR">Nepalese Rupee</option> 
+                <option value="SEK">Swedish Krona</option> 
+                
+            </select>
+            <label for="quantity">AMOUNT</label>
+            <input type="number" name="quantity" min="0" placeholder=" Enter the Amount">
+            <input type="submit" value="Convert" class="btn"/>
+        </form>
+        
+
+        <div class="output">
+            <h1> Converted Currency</h1>
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        Copyright &copy; All Rights Reserved
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
